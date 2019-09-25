@@ -45,7 +45,7 @@ For example on debian and ubuntu by default there is ``/etc/nginx/fastcgi_params
     fastcgi_param   SERVER_PORT             $server_port;
     fastcgi_param   SERVER_NAME             $server_name;
 
-    fastcgi_param   HTTPS                   $https;
+    fastcgi_param   HTTPS                   $https if_not_empty;
 
     # PHP only, required if PHP was built with --enable-force-cgi-redirect
     fastcgi_param   REDIRECT_STATUS         200;
